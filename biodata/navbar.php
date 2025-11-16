@@ -13,20 +13,19 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="http://localhost/UTS_ATHA/index.php">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="biodata/menubiodata.php">Data Siswa</a>
+                    <a class="nav-link" href="menubiodata.php" >Menu Biodata</a>
+
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="siswa/form_tambah.php">Tambah Siswa</a>
+                    <a class="nav-link" href="formtambah.php">Tambah Siswa</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tentang</a>
-                </li>
+             
 
             </ul>
         </div>

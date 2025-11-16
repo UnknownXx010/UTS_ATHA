@@ -11,7 +11,7 @@
 
 <body style="background-color:#e3f3e8;">
 
-<?php include_once("../navbar.php"); ?>
+<?php include_once("navbar.php"); ?>
 
 <div class="container">
     <div class="row my-5">
@@ -30,13 +30,13 @@
                     <div class="row text-center mt-4">
 
                         <div class="col-md-6 mb-4">
-                            <a href="tampil.php" class="btn btn-primary w-100 py-3">
+                            <a href="data.php" class="btn btn-primary w-100 py-3">
                                 <i class="fa-solid fa-users"></i> Lihat Data Biodata
                             </a>
                         </div>
 
                         <div class="col-md-6 mb-4">
-                            <a href="form_tambah.php" class="btn btn-success w-100 py-3">
+                            <a href="formtambah.php" class="btn btn-success w-100 py-3">
                                 <i class="fa-solid fa-user-plus"></i> Tambah Biodata Baru
                             </a>
                         </div>
