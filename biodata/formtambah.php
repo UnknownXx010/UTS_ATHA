@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Siswa</title>
+    <title>Tambah Karyawan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -19,49 +19,30 @@
 
                 <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="card-header">
-                        <b>FORM TAMBAH SISWA</b>
+                        <b>FORM TAMBAH KARYAWAN</b>
                     </div>
 
                     <div class="card-body">
                         <form action="prosestambah.php" method="POST">
 
                             <div class="mb-3">
-                                <label class="form-label">Nama Lengkap</label>
-                                <input type="text" name="nama" class="form-control" required>
+                                <label class="form-label">Nama Karyawan</label>
+                                <input type="text" name="nama_karyawan" class="form-control" required>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">NISN</label>
-                                <input type="number" name="nisn" class="form-control" required>
+                                <label class="form-label">Jabatan</label>
+                                <input type="text" name="jabatan" class="form-control" required maxlength="50">
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Tempat Lahir</label>
-                                <input type="text" name="tp_lahir" class="form-control" required>
+                                <label class="form-label">Tanggal Masuk</label>
+                                <input type="date" name="tanggal_masuk" class="form-control" required>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Tanggal Lahir</label>
-                                <input type="date" name="tg_lahir" class="form-control" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Alamat</label>
-                                <textarea name="alamat" class="form-control" rows="3" required></textarea>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Jenis Kelamin</label>
-                                <select name="jk" class="form-select" required>
-                                    <option value="">-- Pilih --</option>
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
-                                </select>
+                                <label class="form-label">Gaji</label>
+                                <input type="number" name="gaji" class="form-control" required min="0">
                             </div>
 
                             <div class="d-flex justify-content-between">

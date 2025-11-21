@@ -1,36 +1,29 @@
 <?php
-// 1. Koneksi database
+
 include("koneksi.php");
 
-// 2. Ambil data dari form
-$nama       = $_POST['nama'];
-$nisn       = $_POST['nisn'];
-$tp_lahir   = $_POST['tp_lahir'];
-$tg_lahir   = $_POST['tg_lahir'];
-$alamat     = $_POST['alamat'];
-$email      = $_POST['email'];
-$jk         = $_POST['jk'];
+$nama_karyawan  = $_POST['nama_karyawan'];
+$jabatan        = $_POST['jabatan'];
+$tanggal_masuk  = $_POST['tanggal_masuk'];
+$gaji           = $_POST['gaji'];
 
-// 3. Query insert
-$qry = "INSERT INTO biodata (nama, nisn, tp_lahir, tg_lahir, alamat, email, jk)
-        VALUES ('$nama', '$nisn', '$tp_lahir', '$tg_lahir', '$alamat', '$email', '$jk')";
+$qry = "INSERT INTO karyawan (nama_karyawan, jabatan, tanggal_masuk, gaji)
+        VALUES ('$nama_karyawan', '$jabatan', '$tanggal_masuk', '$gaji')";
 
-// 4. Eksekusi query
 $simpan = mysqli_query($koneksi, $qry);
 
-// 5. Cek hasil
 if ($simpan) {
     echo "
         <script>
-            alert('Data berhasil ditambahkan');
-            document.location.href = 'data.php';
+            alert('Data karyawan berhasil ditambahkan');
+            document.location.href = 'index.php';
         </script>
     ";
 } else {
     echo "
         <script>
             alert('Gagal menambah data');
-            document.location.href = 'form_tambah.php';
+            document.location.href = 'formtambah.php';
         </script>
     ";
 }

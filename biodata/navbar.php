@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="index.php">Biodata Siswa</a>
+        <a class="navbar-brand fw-bold" href="index.php">Home</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarNav" aria-controls="navbarNav" 
@@ -17,12 +17,12 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="menubiodata.php" >Menu Biodata</a>
+                    <a class="nav-link" href="menubiodata.php" >Menu data karyawan</a>
 
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="formtambah.php">Tambah Siswa</a>
+                    <a class="nav-link" href="formtambah.php">Tambah karyawan</a>
                 </li>
 
              

@@ -1,27 +1,21 @@
 <?php
 include("koneksi.php");
 
-$id        = $_POST['id'];
-$nama      = $_POST['nama'];
-$nisn      = $_POST['nisn'];
-$tp_lahir  = $_POST['tp_lahir'];
-$tg_lahir  = $_POST['tg_lahir'];
-$alamat    = $_POST['alamat'];
-$email     = $_POST['email'];
-$jk        = $_POST['jk'];
+$id_karyawan    = $_POST['id_karyawan'];
+$nama_karyawan  = $_POST['nama_karyawan'];
+$jabatan        = $_POST['jabatan'];
+$tanggal_masuk  = $_POST['tanggal_masuk'];
+$gaji           = $_POST['gaji'];
 
-$qry = "UPDATE biodata SET 
-        nama='$nama',
-        nisn='$nisn',
-        tp_lahir='$tp_lahir',
-        tg_lahir='$tg_lahir',
-        alamat='$alamat',
-        email='$email',
-        jk='$jk'
-        WHERE id='$id'";
+$qry = "UPDATE karyawan SET 
+        nama_karyawan='$nama_karyawan',
+        jabatan='$jabatan',
+        tanggal_masuk='$tanggal_masuk',
+        gaji='$gaji'
+        WHERE id_karyawan='$id_karyawan'";
 
 mysqli_query($koneksi, $qry);
 
-header("Location: data.php");
+header("Location: index.php");
 exit();
 ?>
